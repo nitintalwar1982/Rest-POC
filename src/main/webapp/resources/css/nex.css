@@ -1,0 +1,529 @@
+@charset "UTF-8";
+@import
+nexReset.css;
+
+/*==========
+Main Styles
+==========*/
+html {
+	background-image: url(./resources/img/green.png);
+}
+body {
+	min-height: 600px;
+	height: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url(./resources/img/green.png);
+	margin: 0; 
+	padding: 0; 
+	border: 0;  
+	min-width: 700px;
+	font-size: 1.2em;
+	/* background: linear-gradient(to bottom, #FFFFFF 0%, #95CBE9 100%); */
+}
+
+.nexApp input[type=text],.nexApp textarea,.nexApp button
+{
+	outline: 0
+}
+
+.nexApp a {
+	text-decoration: none;
+}
+
+.nexApp .nex-main {
+	width: 100%;
+	margin: 0px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.nexApp .nex-main>div {
+	margin: 15px;
+	overflow: hidden;
+}
+
+.nexApp .nex-content {
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #ffffff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-image: url(./resources/img/green.png);
+	/* background: -moz-linear-gradient(top,  #ffffff 0%, #95CBE9 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#95CBE9)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#95CBE9 100%); 
+	background: -o-linear-gradient(top,  #ffffff 0%,#95CBE9 100%); 
+	background: -ms-linear-gradient(top,  #ffffff 0%,#95CBE9 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#95CBE9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#95CBE9',GradientType=0 );
+ */}
+
+.nexApp .nex-intro {
+	width: 60%;
+	float: left;
+	min-height: 300px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #ffffff;
+	/* margin-top: 20px; //#1D2068; */
+}
+
+.nexApp .nex-register {
+	width:37%;
+	float: right;
+	/* margin-top: 20px; */
+	/* border: 1px solid; */
+	display: inherit;
+}
+
+.nexApp .content-top {
+	min-height: 200px;
+}
+
+.nexApp a:hover {
+	text-decoration: none;
+}
+
+.nexApp h2 {
+	padding: 10px 0 0 0;
+	font-size: 2.75em;
+	font-family: Helvetica, Arial, sans-serif !important;
+	font-weight: 400;
+	color: #000000;
+	letter-spacing: -1px;
+}
+
+.nexApp h2 span {
+	display: block;
+	font-size: 25%;
+	font-family: Helvetica, Arial, sans-serif !important;;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: 1px;
+}
+
+.nexApp .overflow {
+	overflow: visible;
+}
+
+.nexApp .nex-red {
+	color: #da2237;
+	font-weight: 600;
+}
+
+.nexApp .nex-blue {
+	color: #0086D8;
+	font-weight: 600;
+}
+
+.nexApp .navbar-nav {
+	position: relative;
+	/* padding: 30px 0 0; */
+}
+
+.nexApp .navbar-nav .page-buttons {
+	max-width: 540px;
+}
+
+.nexApp .navbar-nav .page-buttons .navbar-btn {
+	margin-left: 5px;
+	float: right;
+	padding: 5px 10px 0;
+	text-transform: none;
+}
+
+.nexApp .navbar-btn, .nexApp .nex-register .register-btn {
+	font-family: Helvetica, Arial, sans-serif !important;
+	font-weight: 400;
+	color: #000;
+	height: 40px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	position: relative;
+	border:1px solid #e1e1e1;	
+	/* background: -moz-linear-gradient(top,  #ffffff 0%, #e1e1e1 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e1e1e1)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%); 
+	background: -o-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%); 
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#e1e1e1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 ); */
+	background: #ffffff;
+}
+
+.nexApp .navbar-btn, .nexApp .nex-register div.register-btn {
+	padding-top: 34px;
+}
+
+
+.nexApp .navbar-btn {
+	display: inline-block;
+}
+
+.nexApp .navbar-btn:hover, .nexApp .register-btn:hover {
+	cursor: pointer;	
+}
+
+.nexApp .navbar-btn:focus {
+	outline: none;
+    border-color: #ff5b02;
+    box-shadow: 0px 0px 10px #ff5b02;
+}
+
+.nexApp .nex-register .register-btn:focus  {
+	outline: none;
+    border-color: #ff5b02;
+    box-shadow: 0px 0px 10px #ff5b02;
+}
+
+.nexApp .navbar-nav .navbar-title.img {
+	width: 220px;
+	height: 50px;
+}
+
+.nexApp .nex-left {
+	float: left;
+}
+
+.nexApp .navbar-sort {
+	display: inline-block;
+	font-size: .75em;
+	vertical-align: top;
+	margin: 18px 0px 6px 0px;
+	margin-left: 20%;
+}
+
+.nexApp .navbar-sort li:first-child {
+	padding: 0 5px 0 0;
+}
+
+.nexApp .navbar-sort li {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	padding: 0 4px;
+	text-transform: none;
+	font-size: 1.6em;
+	color: grey;
+	font-family: Helvetica, Arial, sans-serif !important;
+}
+
+
+
+.nexApp .nex-register .register-btn {
+	margin-left: 25px;
+	width: 300px;
+	height: 80px;
+	text-transform: none;
+	font-weight: 100;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: #000000;
+	display: inherit;
+	padding: 20px 20px 0;
+}
+
+.nexApp .nex-register .register-btn {
+	display: inherit;	
+}
+
+.nexApp .nex-register .register-btn:hover {
+	outline: none;
+    border-color: #ff5b02;
+    box-shadow: 0 0 10px #ff5b02;
+}
+
+.nexApp .register-first {
+	z-index: 10;
+}.nexApp .register-sec {
+	top: -15px;
+	left: 60px;
+	z-index: 10;
+}
+.nexApp .register-third {
+	top: -25px;
+	left: 120px;
+	z-index: 10;
+}
+.nexApp .register-fourth {
+	top: -35px;
+	left: 180px;
+	z-index: 10;
+	color: #000000 !important;
+	/* background: rgb(144, 238, 144) !important; */
+}
+
+.nexApp span.reg-span-btn {
+	color: #000000;
+}
+
+/* 
+.nexApp .register-first:hover {
+	z-index: 18 !important;
+}
+.nexApp .register-sec {
+	z-index: 18 !important;
+}
+.nexApp .register-third {
+	z-index: 18 !important;
+}
+.nexApp .register-fourth {
+	z-index: 18 !important;
+} */
+
+.nexApp .content-bottom>div{
+	/* background: -moz-linear-gradient(top,  #ffffff 0%, #d14019 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d14019)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d14019 100%); 
+	background: -o-linear-gradient(top,  #ffffff 0%,#d14019 100%); 
+	background: -ms-linear-gradient(top,  #ffffff 0%,#d14019 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#d14019 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d14019',GradientType=0 ); */
+	background: #fa7f1f;
+}
+
+.nexApp .nex-connect {
+	width: 28%;
+	float: left;
+	min-height: 250px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #e1e1e1;
+	margin-top: 40px;
+}
+
+.nexApp .nex-collaborate {
+	width: 28%;
+	float: left;
+	min-height: 250px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #e1e1e1;
+	margin: 20px 7.7% 20px 7.7%;
+}
+
+.nexApp .nex-vFanZone {
+	width: 28%;
+	float: left;
+	min-height: 250px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #e1e1e1;
+	margin-top: 20px;
+	float: right;
+}
+
+.nexApp .reset-email {
+	width: 25%;
+	float: left;
+	min-height: 70px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	background: #ffffff;	
+	/* margin-top: 40px; */
+	margin-left: 15%;
+	padding-left: 20px;
+}
+
+.nexApp .reset-robot {
+	width: 25%;
+	float: right;
+	min-height: 70px;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #ffffff;
+	/* margin-top: 40px; */
+	margin-right: 15%;
+	padding-left: 20px;
+}
+
+.nexApp .reset-cancel {
+	width: 120px;
+	float: left;
+	min-height: 60px;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-left: 35%;
+	padding:20px;
+	margin-top: 50px;
+}
+
+.nexApp .reset-continue {
+	width: 120px;
+	float: right;
+	min-height: 60px;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-right: 35%;
+	padding:20px;
+	margin-top: 50px;
+}
+
+.nexApp .reset-cancel>span, .nexApp .reset-continue>span {
+	color: #ffffff;
+}
+	
+.nexApp .reset-email>span, .nexApp .reset-robot>span {
+	display: block;
+	font-size: 1.6em;
+	text-align: center;
+	margin: 60px 20px 20px 20px ;
+	text-transform: none;
+	color: #000000;
+	letter-spacing: 1px;
+}
+
+.nexApp .content-bottom-head {
+	display: block;
+	font-size: 1.4em;
+	text-align: center;
+	margin: 20px;
+	text-transform: none;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.nexApp .content-bottom-text {
+	display: block;
+	font-size: 1.2em;
+	margin: 60px 20px 20px 20px ;
+	text-transform: none;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.nexApp .login-msg {
+	width: 100%;
+	height: 20px;
+	float: right;
+	display: block;
+	font-size: 1.0em;
+	padding: 0px 20px 0px 64.5%;
+	text-transform: none;
+	color: #ffffff;
+	letter-spacing: 1px;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.nexApp .reg-ul {
+	display: none;
+	padding-top: 10px;	
+}
+
+.nexApp .reg-ul>li{
+	background: #ffffff;
+	border-bottom: 1px dotted;
+	font-size: .8em;
+	height: 40px;
+    width: 100%;
+    color: #000000;
+    padding: 10px;
+
+}
+
+.nexApp .navbar-nav .page-buttons .login-btn {
+	height: 60px;
+	padding: 20px;
+	font-size: 1em;
+}
+
+.nexApp .reset-msg {
+	width: 100%;
+	height: 180px;
+	padding-top:60px;
+	padding-bottom:40px;
+	text-align: center;
+	display: block;
+	font-size: 1.8em;
+	text-transform: none;
+	color: #ffffff;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+.nex-logo {
+	height: 50px;
+    width: 220px;
+    float: right;
+}
+.nexApp .nex-login {
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+.nexApp .nex-login-attr {
+	font-size: 10px;
+	color: blue;
+	padding-left: 30px;
+	padding-top: 2px;
+}
+
+@media screen and (max-width: 1400px) {
+	.nexApp .nex-main {
+		padding: 10px;
+	}
+	.nexApp .nex-main>div {
+		margin: 5px;
+	}
+	
+    .nexApp .navbar-sort {
+		margin-left: 10%;
+	}
+	.nexApp .nex-register .register-btn {
+		width: 250px;
+	}
+	
+	.nexApp .nex-connect{
+		min-height: 160px;
+	}
+	
+	.nexApp .nex-collaborate{
+		min-height: 160px;
+	}
+	
+	.nexApp .nex-vFanZone {
+		min-height: 160px;
+	}
+	
+	.nexApp .content-bottom-text {
+		margin: 20px 20px 20px 20px;
+		font-size: .8em;
+	}
+	
+	.nexApp .content-bottom-head {
+		font-size: 1.2em;
+	}
+	
+	.nexApp .nex-intro {
+		min-height: 250px;
+	}
+	
+	.nexApp .nex-register .register-btn {
+		height: 70px;
+		font-size: 1.0em;
+	}
+}

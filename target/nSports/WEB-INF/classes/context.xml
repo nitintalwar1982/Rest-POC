@@ -1,0 +1,34 @@
+<Context>
+  <!-- <Resource
+	   name="jdbc/nexDatabase"
+	   auth="Container"
+	   type="oracle.jdbc.pool.OracleDataSource"
+	   factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+	   initialSize="5"
+	   maxActive="55"
+	   maxIdle="21"
+	   minIdle="13"
+	   timeBetweenEvictionRunsMillis="34000"
+	   minEvictableIdleTimeMillis="55000"
+	   validationQuery="SELECT 1"
+	   validationInterval="34"
+	   testOnBorrow="true"
+	   removeAbandoned="true"
+	   removeAbandonedTimeout="233"
+	   username="security"
+	   password="security"
+	   driverClassName="com.mysql.jdbc.Driver"
+	   url="jdbc:oracle:thin:@localhost:1521:xe"
+   />  -->
+   
+   <Resource name="jdbc/myoracle" 
+   		auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="oracle.jdbc.OracleDriver"
+        url="jdbc:oracle:thin:@localhost:1521:xe"
+        username="security" 
+        password="security" 
+        maxActive="20"
+        maxIdle="10"
+        maxWait="-1"/> 
+</Context>

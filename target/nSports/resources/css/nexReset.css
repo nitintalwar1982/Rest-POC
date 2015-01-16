@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.nexApp div,.nexApp  span,.nexApp  object,.nexApp  iframe,.nexApp  h1,.nexApp  h2,.nexApp  h3,.nexApp  h4,.nexApp  h5,.nexApp  h6,.nexApp  p,.nexApp  blockquote,.nexApp  pre,.nexApp  abbr,.nexApp  address,.nexApp  cite,.nexApp  code,.nexApp  del,.nexApp  dfn,.nexApp  em,.nexApp  img,.nexApp  ins,.nexApp  kbd,.nexApp  q,.nexApp  samp,.nexApp  small,.nexApp  strong,.nexApp  sub,.nexApp  sup,.nexApp  var,.nexApp  b,.nexApp  i,.nexApp  dl,.nexApp  dt,.nexApp  dd,.nexApp  ol,.nexApp  ul,.nexApp  li,.nexApp  fieldset,.nexApp  form,.nexApp  label,.nexApp  legend,.nexApp  table,.nexApp  caption,.nexApp  tbody,.nexApp  tfoot,.nexApp  thead,.nexApp  tr,.nexApp  th,.nexApp  td,.nexApp  article,.nexApp  aside,.nexApp  figure,.nexApp  footer,.nexApp  header,.nexApp  hgroup,.nexApp  menu,.nexApp  nav,.nexApp  section,.nexApp  time,.nexApp  mark,.nexApp  audio,.nexApp  video,.nexApp  details,.nexApp  summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* vertical-align: baseline; */
+	background: transparent;
+	color: grey;
+	font-family: Helvetica, Arial, sans-serif !important;
+}									
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.nexApp article,.nexApp  aside,.nexApp  figure,.nexApp  footer,.nexApp  header,.nexApp  hgroup,.nexApp  nav,.nexApp  section,.nexApp  details,.nexApp  summary {
+	display: block;
+}
+
+/* ULs that aren't bulleted. */
+.nexApp ul {list-style: none;}
+
+.nexApp blockquote, .nexApp q {quotes: none;}
+
+.nexApp blockquote:before, 
+.nexApp blockquote:after, 
+.nexApp q:before, 
+.nexApp q:after {content: ''; content: none;}
+
+.nexApp a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #0086d8;}
+.nexApp a:hover {text-decoration: underline; }
+
+.nexApp del {text-decoration: line-through;}
+
+.nexApp abbr[title],.nexApp  dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+.nexApp table {border-collapse: collapse; border-spacing: 0;}
+.nexApp th {font-weight: bold; vertical-align: bottom;}
+.nexApp td {font-weight: normal; vertical-align: top;}
+
+.nexApp hr {display: block; height: 1px; border: 0; border-top: 1px solid #eee; margin: 1em 0; padding: 0;}
+
+.nexApp input,.nexApp  select {vertical-align: middle;}
+
+.nexApp input[type="radio"] {vertical-align: text-bottom;}
+.nexApp input[type="checkbox"] {vertical-align: bottom;}
+.nexApp .ie7 input[type="checkbox"] {vertical-align: baseline;}
+.nexApp .ie6 input {vertical-align: text-bottom;}
+
+.nexApp select, .nexApp input, .nexApp textarea {font: 99% sans-serif;}
+
+.nexApp table {font-size: inherit; font: 100%;}
+
+.nexApp small {font-size: 85%;}
+
+.nexApp strong {font-weight: bold;}
+
+.nexApp td,.nexApp  td img {vertical-align: top;} 
+
+/* super/sub font fix */
+.nexApp sub,.nexApp  sup {font-size: 75%; line-height: 0; position: relative;}
+.nexApp sup {top: -0.5em;}
+.nexApp sub {bottom: -0.25em;}
+
+/* hand cursor on clickable elements */
+.nexApp .clickable,
+.nexApp label, 
+.nexApp input[type=button], 
+.nexApp input[type=submit], 
+.nexApp input[type=file], 
+.nexApp button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside of form elements */
+.nexApp button,.nexApp  input,.nexApp  select,.nexApp  textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+.nexApp button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.nexApp .ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.nexApp .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.nexApp .clearfix:before, .nexApp .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.nexApp .clearfix:after { clear: both; }  
+.nexApp .clearfix { zoom: 1; } 
+.nexApp .clear { clear: both; }
+
+/* handy */
+.nexApp .hide { display: none; }
+.nexApp .left { float: left; }
+.nexApp .right { float: right; }
+.nexApp .block { display: block; }
+
+/* troubleshooting identifiers */
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    grey;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    grey;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    grey;
+}
