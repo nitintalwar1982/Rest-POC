@@ -1,135 +1,30 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org"
-	xmlns="http://www.w3.org/1999/xhtml">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<html ng-app="sportsNex">
 <head>
-
-<link rel="stylesheet" type="text/css"
+	<title>Sports Nex</title>
+	<link rel="stylesheet" type="text/css"
 	href="./resources/css/nexReset.css"></link>
-<link rel="stylesheet" type="text/css" href="./resources/css/nex.css"></link>
-
-<script src="./resources/js/jquery1.11.2.min.js"></script>
-<script src="./resources/js/sportsNex.js"></script>
-
-<script>
+	<link rel="stylesheet" type="text/css" href="./resources/css/nex.css"></link>
 	
-</script>
-
 </head>
 <body class="nexApp">
-	<div class="nex-main">
 
-		<div class="login-head">
-			<div class="navbar-nav">
-				<div class="nex-left">
-					<img src="./resources/img/nex-logo.png" class="nex-logo" />
-				</div>
-				<ul class="navbar-sort">
-					<li>Connect &nbsp; Collaborate &nbsp; Express</li>
-				</ul>
-				<div class="page-buttons right" id="pageButton">
-
-
-					<div class="page-buttons right" id="pageButton">
-						<table class="nex-login-table">
-							<tr>
-								<td><input onmouseover="popButton(this);"
-									class="navbar-btn nex-btn" data-msg=""
-									data-placeholder="UserName" placeholder="..."
-									style="z-index: 10000;"></td>
-								<td><input type="password" onmouseover="popButton(this);"
-									class="navbar-btn nex-btn" data-msg=""
-									data-placeholder="Password" placeholder="Password"
-									style="z-index: 10;"></td>
-								<td><img src="./resources/img/login.jpg" class="nex-login" />
-								</td>
-							</tr>
-							<tr>
-								<td class="nex-login-attr"><input id="persist_box"
-									type="checkbox" name="persistent" value="1" checked="1"
-									class="uiInputLabelInput uiInputLabelCheckbox"> Keep me
-									logged in</td>
-
-								<td class="nex-login-attr"><a href="#">Forget Password</a>
-								</td>
-								<td></td>
-							</tr>
-						</table>
-
-					</div>
-
-				</div>
-			</div>
-			<!-- navbar-nav -->
-
-		</div>
-		<!-- login-head -->
-
-		<div class="nex-content"
-			style="background-image: url(./resources/img/green.png);">
-			<div class="content-top">
-				<div class="login-msg"></div>
-				<div class="nex-intro"></div>
-				<div class="nex-register">
-					<div class="register-buttons" id="pageButton">
-						<input id="nex-email-id" onmouseover="popButton(this);"
-							class="register-btn register-btn-js nex-btn"
-							data-msg="Enter Email" data-placeholder="Email Id"
-							placeholder="Email Id"> </input> <input id="nex-password"
-							onmouseover="popButton(this);"
-							class="register-btn register-btn-js register-sec nex-btn"
-							data-msg="Create Password" data-placeholder="Password"
-							placeholder="Password"> </input>
-						<div onmouseover="popButton(this);"
-							onmouseout="$('.reg-ul').css('display','none');"
-							class="register-btn register-btn-js register-btn-pt register-third nex-btn"
-							data-msg="Select Profile Type" data-placeholder="Profile Type"
-							placeholder="Profile Type">
-							<span id="reg-span">Profile Type</span>
-							<ul class="reg-ul"
-								onmouseout="$('.reg-ul').css('display','none');">
-								<li onclick="selectProfile('register-btn-pt','Individual')"
-									class="reg-li">Individual</li>
-								<li onclick="selectProfile('register-btn-pt','Team')"
-									class="reg-li">Team</li>
-								<li onclick="selectProfile('register-btn-pt','League')"
-									class="reg-li">League</li>
-							</ul>
-						</div>
-
-						<div onclick="nexRegister();" onmouseover="popButton(this);"
-							class="register-btn register-btn-js register-btn-reg register-fourth nex-btn"
-							data-msg="Click To Register" data-placeholder="Register"
-							placeholder="Register !!">
-							<span class="reg-span-btn">Register</span>
-						</div>
-
-						<!-- 						<input onmouseover ="popButton(this);" class="register-btn register-btn-js register-btn-reg register-fourth nex-btn" data-msg="Click To Register"  data-placeholder="Register" placeholder="Register !!">
-						</input>
- -->
-					</div>
-				</div>
-			</div>
-
-			<div class="content-bottom">
-				<div class="nex-connect">
-					<div class="content-bottom-head">Connect</div>
-					<div class="content-bottom-text">Connect with your favorite
-						athletes, friends &amp; fans around the world</div>
-				</div>
-				<div class="nex-collaborate">
-					<div class="content-bottom-head">Collaborate</div>
-					<div class="content-bottom-text">Collaborate with your team &
-						leagues</div>
-				</div>
-				<div class="nex-vFanZone">
-					<div class="content-bottom-head">VFanZone</div>
-					<div class="content-bottom-text">Have Your Say !!</div>
-				</div>
-			</div>
-		</div>
+	<div class="loader" ng-hide="initialized">
+		Loading...
 	</div>
 
-
+	<div class="container ng-hide" ng-show="initialized">
+		<div class="alert alert-danger" ng-show="error">{{error}}</div>
+		<div ng-view></div>
+	</div>
+	
+	<script src="./resources/js/app/thirdparty/jquery1.11.2.min.js"></script>
+	<script src="./resources/js/app/thirdparty/bootstrap-3.1.1.min.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-resource-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-route-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-cookies-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/config.js"></script>
+	<script src="./resources/js/app/sportsNex.js"></script>
 </body>
 </html>

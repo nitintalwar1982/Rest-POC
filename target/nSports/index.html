@@ -1,135 +1,68 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org"
-	xmlns="http://www.w3.org/1999/xhtml">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<html ng-app="sportsNex">
 <head>
-
-<link rel="stylesheet" type="text/css"
-	href="./resources/css/nexReset.css"></link>
-<link rel="stylesheet" type="text/css" href="./resources/css/nex.css"></link>
-
-<script src="./resources/js/jquery1.11.2.min.js"></script>
-<script src="./resources/js/sportsNex.js"></script>
-
-<script>
-	
-</script>
-
+	<title>Sports Nex</title>
+	<!-- <link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet"> -->
+	<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
 </head>
-<body class="nexApp">
-	<div class="nex-main">
+<body>
 
-		<div class="login-head">
-			<div class="navbar-nav">
-				<div class="nex-left">
-					<img src="./resources/img/nex-logo.png" class="nex-logo" />
-				</div>
-				<ul class="navbar-sort">
-					<li>Connect &nbsp; Collaborate &nbsp; Express</li>
-				</ul>
-				<div class="page-buttons right" id="pageButton">
-
-
-					<div class="page-buttons right" id="pageButton">
-						<table class="nex-login-table">
-							<tr>
-								<td><input onmouseover="popButton(this);"
-									class="navbar-btn nex-btn" data-msg=""
-									data-placeholder="UserName" placeholder="..."
-									style="z-index: 10000;"></td>
-								<td><input type="password" onmouseover="popButton(this);"
-									class="navbar-btn nex-btn" data-msg=""
-									data-placeholder="Password" placeholder="Password"
-									style="z-index: 10;"></td>
-								<td><img src="./resources/img/login.jpg" class="nex-login" />
-								</td>
-							</tr>
-							<tr>
-								<td class="nex-login-attr"><input id="persist_box"
-									type="checkbox" name="persistent" value="1" checked="1"
-									class="uiInputLabelInput uiInputLabelCheckbox"> Keep me
-									logged in</td>
-
-								<td class="nex-login-attr"><a href="#">Forget Password</a>
-								</td>
-								<td></td>
-							</tr>
-						</table>
-
-					</div>
-
-				</div>
-			</div>
-			<!-- navbar-nav -->
-
-		</div>
-		<!-- login-head -->
-
-		<div class="nex-content"
-			style="background-image: url(./resources/img/green.png);">
-			<div class="content-top">
-				<div class="login-msg"></div>
-				<div class="nex-intro"></div>
-				<div class="nex-register">
-					<div class="register-buttons" id="pageButton">
-						<input id="nex-email-id" onmouseover="popButton(this);"
-							class="register-btn register-btn-js nex-btn"
-							data-msg="Enter Email" data-placeholder="Email Id"
-							placeholder="Email Id"> </input> <input id="nex-password"
-							onmouseover="popButton(this);"
-							class="register-btn register-btn-js register-sec nex-btn"
-							data-msg="Create Password" data-placeholder="Password"
-							placeholder="Password"> </input>
-						<div onmouseover="popButton(this);"
-							onmouseout="$('.reg-ul').css('display','none');"
-							class="register-btn register-btn-js register-btn-pt register-third nex-btn"
-							data-msg="Select Profile Type" data-placeholder="Profile Type"
-							placeholder="Profile Type">
-							<span id="reg-span">Profile Type</span>
-							<ul class="reg-ul"
-								onmouseout="$('.reg-ul').css('display','none');">
-								<li onclick="selectProfile('register-btn-pt','Individual')"
-									class="reg-li">Individual</li>
-								<li onclick="selectProfile('register-btn-pt','Team')"
-									class="reg-li">Team</li>
-								<li onclick="selectProfile('register-btn-pt','League')"
-									class="reg-li">League</li>
-							</ul>
-						</div>
-
-						<div onclick="nexRegister();" onmouseover="popButton(this);"
-							class="register-btn register-btn-js register-btn-reg register-fourth nex-btn"
-							data-msg="Click To Register" data-placeholder="Register"
-							placeholder="Register !!">
-							<span class="reg-span-btn">Register</span>
-						</div>
-
-						<!-- 						<input onmouseover ="popButton(this);" class="register-btn register-btn-js register-btn-reg register-fourth nex-btn" data-msg="Click To Register"  data-placeholder="Register" placeholder="Register !!">
-						</input>
- -->
-					</div>
-				</div>
-			</div>
-
-			<div class="content-bottom">
-				<div class="nex-connect">
-					<div class="content-bottom-head">Connect</div>
-					<div class="content-bottom-text">Connect with your favorite
-						athletes, friends &amp; fans around the world</div>
-				</div>
-				<div class="nex-collaborate">
-					<div class="content-bottom-head">Collaborate</div>
-					<div class="content-bottom-text">Collaborate with your team &
-						leagues</div>
-				</div>
-				<div class="nex-vFanZone">
-					<div class="content-bottom-head">VFanZone</div>
-					<div class="content-bottom-text">Have Your Say !!</div>
-				</div>
-			</div>
-		</div>
+	<div class="loader" ng-hide="initialized">
+		Loading...
 	</div>
 
+	<nav class="navbar navbar-fixed-top navbar-default ng-hide" role="navigation" ng-show="initialized">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Angular+Rest+SpringSecurity</a>
+			</div>
 
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#!/">Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<!-- 
+						If you like this example please flattr or donate before removing the links below, thank you!
+					-->
+					<li>
+						<a href="https://flattr.com/submit/auto?user_id=shoxrocks&amp;url=http://sorst.net/github/angular-rest-springsecurity&amp;title=AngularJS%20REST%20Spring%20Security%20Example&amp;language=&amp;tags=github&amp;category=software"><img src="https://github-camo.global.ssl.fastly.net/739a757846f69c1cc10163619eec008e871b591b/687474703a2f2f6170692e666c617474722e636f6d2f627574746f6e2f666c617474722d62616467652d6c617267652e706e67" alt="Flattr this git repo" style="max-width:100%;"></a>
+					</li>
+					<li>
+						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=W9NAXW8YAZ4D6&item_name=AngularJS REST SpringSecurity Example Donation&currency_code=EUR"><img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate" /></a>
+					</li>
+					<li class="dropdown" ng-show="user">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">{{user.name}} <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="" ng-click="logout()"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container ng-hide" ng-show="initialized">
+		<div class="alert alert-danger" ng-show="error">{{error}}</div>
+		<div ng-view></div>
+	</div>
+	
+	<script src="./resources/js/app/thirdparty/jquery1.11.2.min.js"></script>
+	<script src="./resources/js/app/thirdparty/bootstrap-3.1.1.min.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-resource-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-route-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/angular-cookies-1.2.3.js"></script>
+	<script src="./resources/js/app/thirdparty/config.js"></script>
+	<script src="./resources/js/sportsNex.js"></script>
 </body>
 </html>
