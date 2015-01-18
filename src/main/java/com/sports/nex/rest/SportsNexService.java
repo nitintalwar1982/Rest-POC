@@ -27,6 +27,7 @@ public class SportsNexService {
 	@Autowired
 	private UserDao UserDao;
 	
+	
 	@POST
 	@Consumes({ MediaType.APPLICATION_JSON })
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
@@ -51,7 +52,6 @@ public class SportsNexService {
 		Users user = new Users();
         user.setUserEmailAddress("nitintalwar1982@gmail.com");
         user.setUserPassword("tetst");
-        user.setSportsType("Individual");
         user.setCreationDate(new Timestamp(Calendar.getInstance().getTime().getTime()));
         user.setLastModifiedBy("nitin talwar");
         user.setLastModifiedDate(new Timestamp(Calendar.getInstance().getTime().getTime()));
@@ -71,7 +71,6 @@ public class SportsNexService {
 		Users user = new Users();
         user.setUserEmailAddress("nitintalwar1982@gmail.com");
         user.setUserPassword("tetst");
-        user.setSportsType("Individual");
         user.setCreationDate(new Timestamp(Calendar.getInstance().getTime().getTime()));
         user.setLastModifiedBy("nitin talwar");
         user.setLastModifiedDate(new Timestamp(Calendar.getInstance().getTime().getTime()));

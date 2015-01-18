@@ -27,7 +27,6 @@ import com.sports.nex.entities.Users;
 	        Users user = new Users();
 	        user.setUserEmailAddress("nitintalwar1982@gmail.com");
 	        user.setUserPassword("tetst");
-	        user.setSportsType("Individual");
 	        user.setCreationDate(new Timestamp(Calendar.getInstance().getTime().getTime()));
 	        user.setLastModifiedBy("nitin talwar");
 	        user.setLastModifiedDate(new Timestamp(Calendar.getInstance().getTime().getTime()));
