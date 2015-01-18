@@ -45,11 +45,6 @@ public class Users implements Serializable{
 	@Column(name="userPassword")
 	private String userPassword;
 	
-	@Column(name="sportsType")
-	private String sportsType;
-	
-//	private String profileType;
-	
 	@Column(name="creationDate")
 	private Timestamp creationDate;
 	
@@ -64,14 +59,13 @@ public class Users implements Serializable{
 	}
 	
 	public Users(Integer userPID, Integer userTypePID, String userEmailAddress,
-			String userPassword, String sportsType, Timestamp creationDate,
+			String userPassword, Timestamp creationDate,
 			Timestamp lastModifiedDate, String lastModifiedBy) {
 		super();
 		this.userPID = userPID;
 		this.userTypePID = userTypePID;
 		this.userEmailAddress = userEmailAddress;
 		this.userPassword = userPassword;
-		this.sportsType = sportsType;
 		this.creationDate = creationDate;
 		this.lastModifiedDate = lastModifiedDate;
 		this.lastModifiedBy = lastModifiedBy;
@@ -109,14 +103,6 @@ public class Users implements Serializable{
 
 	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
-	}
-
-	public String getSportsType() {
-		return sportsType;
-	}
-
-	public void setSportsType(String sportsType) {
-		this.sportsType = sportsType;
 	}
 
 	public Timestamp getCreationDate() {
