@@ -71,8 +71,6 @@ public class Users implements Serializable{
 		this.lastModifiedBy = lastModifiedBy;
 	}
 
-
-
 	public Integer getUserPID() {
 		return userPID;
 	}
