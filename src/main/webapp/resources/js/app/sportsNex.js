@@ -193,10 +193,9 @@ function RegisterController($scope, $rootScope, $location, $cookieStore, UserSer
 		
 		var data = {
 			    "lastModifiedBy": "nitin talwar",
-			    "sportsType": "Individual",
 			    "userEmailAddress": $scope.userEmailId,
 			    "userPassword": $scope.userPassword,
-			    "userTypePID": $scope.userTypePID
+			    "userTypePID": 0
 			}; 
 			$.ajax({
 				url : 'http://localhost:9080/nSports/rest/sports/registerUser',
